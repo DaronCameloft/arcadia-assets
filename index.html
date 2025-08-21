@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Team Arcadia — Comunidad Oficial</title>
+  <meta name="description" content="Team Arcadia: comunidad, historia, liderazgo y una galería/muro colaborativo en tiempo real." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">✨ Team Arcadia</div>
+        <div class="links">
+          <a href="#about">Nosotros</a>
+          <a href="#leaders">Líderes</a>
+          <a href="#history">Historia</a>
+          <a href="#admins">Admins</a>
+          <a href="#wall">Galería Arcadia</a>
+          <a href="#jukebox">Jukebox</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="chip">Comunidad oficial</span>
+      <h1>Personalizamos la aventura.<br/>Arcadia es <em>libertad, comunidad y creación</em>.</h1>
+      <p>Inspirados en interfaces limpias como Starlink y Hyer. Descubre quiénes somos, conoce a nuestros líderes y participa en el muro colaborativo en tiempo real. Comparte mensajes, fotos y música con toda la comunidad.</p>
+      <div class="cta">
+        <a class="btn" href="#wall">Publicar en la Galería</a>
+        <a class="btn ghost" href="#jukebox">Abrir Jukebox</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container two-col">
+      <div>
+        <h2>¿Qué es <span style="color:var(--brand)">Team Arcadia</span>?</h2>
+        <p class="help">Un grupo de creadores y estudiantes que aprenden haciendo: proyectos, retos y tecnología para impactar de forma positiva.</p>
+        <div class="card">
+          <ul>
+            <li>⚡ Retos mensuales de programación y diseño.</li>
+            <li>🛰️ Charlas y mentorías internas.</li>
+            <li>🤝 Cultura: respeto, constancia y juego limpio.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Tu identidad</h3>
+        <p class="help">Establece tu nombre (y avatar opcional) para aparecer en la Galería y la Jukebox.</p>
+        <div class="uploader">
+          <div class="form-row">
+            <input id="displayName" placeholder="Tu nombre (obligatorio)" />
+            <input id="avatarFile" type="file" accept="image/*" />
+          </div>
+          <div class="progress"><i id="avatarBar"></i></div>
+          <button class="btn small" id="saveIdentity">Guardar identidad</button>
+          <p class="help" id="identityStatus">Tu nombre se guarda en este dispositivo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leaders">
+    <div class="container">
+      <h2>Líderes del grupo: Daron y Sergio</h2>
+      <div class="people">
+        <div class="person">
+          <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=900&auto=format&fit=crop" alt="Daron"/>
+          <div class="name">Daron</div>
+          <div class="role">Co‑Líder • Estrategia y Tecnología</div>
+          <p class="help">Enfocado en arquitectura, buenas prácticas y guías para nuevos miembros.</p>
+        </div>
+        <div class="person">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=900&auto=format&fit=crop" alt="Sergio"/>
+          <div class="name">Sergio</div>
+          <div class="role">Co‑Líder • Operaciones y Comunidad</div>
+          <p class="help">Lidera eventos, coordinación interna y crecimiento de Arcadia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="history">
+    <div class="container two-col">
+      <div>
+        <h2>Nuestra historia</h2>
+        <p class="help">Arcadia nació como un pequeño grupo de estudio y evolucionó a una comunidad de aprendizaje con proyectos de software, diseño y hardware. Creemos en crear valor abierto y celebrar los logros de cada miembro.</p>
+      </div>
+      <div class="card">
+        <h3>Hitos</h3>
+        <ul>
+          <li>2023 — Primer reto de páginas responsivas.</li>
+          <li>2024 — Hackatón interna y primeros talks.</li>
+          <li>2025 — Plataforma y comunidad pública.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="admins">
+    <div class="container">
+      <h2>Administradores y Moderadores</h2>
+      <div class="people" id="adminsGrid">
+        <div class="person">
+          <img src="https://images.unsplash.com/photo-1541534401786-2077eed87a4b?q=80&w=900&auto=format&fit=crop" alt="Admin"/>
+          <div class="name">Alexa</div>
+          <div class="role">Admin</div>
+          <p class="help">Soporte técnico • Moderación</p>
+        </div>
+        <div class="person">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=900&auto=format&fit=crop" alt="Mod"/>
+          <div class="name">Marco</div>
+          <div class="role">Moderador</div>
+          <p class="help">Revisiones de contenido</p>
+        </div>
+        <div class="person">
+          <img src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=900&auto=format&fit=crop" alt="Mod"/>
+          <div class="name">Paula</div>
+          <div class="role">Moderadora</div>
+          <p class="help">Eventos y comunidad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="wall">
+    <div class="container">
+      <h2>Galería Arcadia — Muro 1‑para‑todos (tiempo real)</h2>
+      <p class="help">Publica un mensaje con texto y/o imagen. Sube tu avatar una sola vez en la sección "Tu identidad". Todo se sincroniza en tiempo real usando Firebase (Firestore + Storage).</p>
+      <div class="card">
+        <div class="form-row">
+          <input id="msgText" placeholder="Escribe un mensaje (opcional si subes imagen)" />
+          <input id="msgImage" type="file" accept="image/*" />
+        </div>
+        <div class="progress"><i id="msgBar"></i></div>
+        <div style="display:flex;gap:.6rem;align-items:center;margin-top:.6rem">
+          <button class="btn small" id="publish">Publicar en la Galería</button>
+          <span class="help" id="wallStatus">Tu publicación aparecerá abajo y en todos los navegadores abiertos.</span>
+        </div>
+      </div>
+
+      <div class="wall" id="wallGrid" style="margin-top:1rem"></div>
+    </div>
+  </section>
+
+<!-- BADGE MAKER -->
+<section id="badge" class="section">
+<div class="container">
+<div class="card">
+<h2>Arcadia Badge Maker</h2>
+<p class="muted">Crea tu credencial descargable (PNG). Luego publícala en la Galería.</p>
+<div class="badge-maker">
+<div>
+<div class="field"><input id="badgeName" type="text" placeholder="Tu nombre"/></div>
+<div class="field"><input id="badgeRole" type="text" placeholder="Rol"/></div>
+<div class="field"><label class="hint">Avatar</label><input type="file" id="badgeAvatar" accept="image/*"></div>
+<div class="toolbar">
+<button class="btn primary" id="renderBadge">Generar Badge</button>
+<button class="btn" id="downloadBadge">Descargar PNG</button>
+<button class="btn" id="postBadge">Publicar en Galería</button>
+</div>
+</div>
+<div>
+<canvas id="badgeCanvas" width="1000" height="560"></canvas>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+  <section id="jukebox">
+    <div class="container">
+      <h2>🎶 Arcadia Jukebox — Playlist compartida en tiempo real</h2>
+      <p class="help">Pega un enlace de YouTube y compártalo con todos. La lista se actualiza en vivo.</p>
+      <div class="card">
+        <div class="form-row">
+          <input id="ytUrl" placeholder="URL de YouTube (ej: https://youtu.be/...)" />
+          <button class="btn small" id="addTrack">Agregar a la Jukebox</button>
+        </div>
+      </div>
+
+      <div class="jukebox">
+        <div class="tracks" id="tracks"></div>
+        <div class="card" id="playerCard" style="display:none">
+          <h3 id="nowPlaying">Reproduciendo…</h3>
+          <div id="player"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <span>© 2025 Team Arcadia. Hecho con ♥ para prácticas universitarias.</span>
+        <span class="help">Stack: HTML + CSS + Vanilla JS + Firebase (CDN) — sin backend propio.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Firebase SDK (modular v9) -->
+  <script type="module">
+    // === 1) CONFIGURA TU PROYECTO EN FIREBASE ===
+    // Crea un proyecto en https://console.firebase.google.com
+    // Habilita: Firestore y Storage.
+    // Reemplaza este objeto por tu configuración web (no comillas de ejemplo).
+   const firebaseConfig = {
+  apiKey: "AIzaSyCJDQLo9KymujapVDt7rpLIEtmtL3AN1s",
+  authDomain: "arcadiadevs.firebaseapp.com",
+  projectId: "arcadiadevs",
+  storageBucket: "arcadiadevs.appspot.com",
+  messagingSenderId: "521951816491",
+  appId: "1:521951816491:web:23c6275eacf44fd992736e"
+};
+
+
+    // === 2) IMPORTS DINÁMICOS DESDE CDN ===
+    const [{initializeApp}, {getFirestore, collection, addDoc, serverTimestamp, onSnapshot, query, orderBy, limit}, {getStorage, ref, uploadBytesResumable, getDownloadURL}] = await Promise.all([
+      import('https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js'),
+      import('https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js'),
+      import('https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js')
+    ]);
+
+    // === 3) INIT ===
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const storage = getStorage(app);
+
+    // === 4) UTILIDADES ===
+    const $ = (sel)=>document.querySelector(sel);
+    const state = {
+      name: localStorage.getItem('arcadia:name') || '',
+      avatar: localStorage.getItem('arcadia:avatar') || ''
+    };
+    const setIdentityStatus = (msg)=> $('#identityStatus').textContent = msg;
+
+    function renderWallItem(doc){
+      const d = doc.data();
+      const el = document.createElement('article');
+      el.className = 'tile';
+      el.innerHTML = `
+        ${d.image ? `<img src="${d.image}" alt="media"/>` : ''}
+        <div class="body">
+          ${d.text ? `<p>${escapeHtml(d.text)}</p>` : ''}
+          <div class="meta">
+            <img class="avatar" src="${d.avatar || 'https://api.dicebear.com/7.x/identicon/svg'}" alt="avatar"/>
+            <span>${escapeHtml(d.name || 'Arcadian')}</span>
+            <small>· ${new Date(d.created?.seconds*1000||Date.now()).toLocaleString()}</small>
+          </div>
+        </div>`;
+      return el;
+    }
+
+    function renderTrackItem(doc){
+      const d = doc.data();
+      const art = document.createElement('div');
+      art.className = 'track';
+      art.innerHTML = `
+        <div style="display:flex;align-items:center;gap:.8rem">
+          <img src="https://img.youtube.com/vi/${d.videoId}/hqdefault.jpg" alt="thumb" style="width:86px;height:60px;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.1)"/>
+          <div>
+            <div><strong>${escapeHtml(d.title||'Video')}</strong></div>
+            <small>por ${escapeHtml(d.by||'Anónimo')}</small>
+          </div>
+        </div>`;
+      art.addEventListener('click',()=>playTrack(d.videoId,d.title));
+      return art;
+    }
+
+    function escapeHtml(str=''){
+      return str.replace(/[&<>"]+/g, s=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[s]));
+    }
+
+    // === 5) IDENTIDAD (nombre + avatar opcional) ===
+    $('#saveIdentity').addEventListener('click', async ()=>{
+      const name = $('#displayName').value.trim();
+      if(!name){ alert('Escribe tu nombre'); return; }
+      state.name = name; localStorage.setItem('arcadia:name', name);
+      const file = $('#avatarFile').files[0];
+      if(file){
+        const path = `avatars/${Date.now()}_${file.name}`;
+        const r = ref(storage, path);
+        const task = uploadBytesResumable(r, file);
+        task.on('state_changed', (snap)=>{
+          const p = (snap.bytesTransferred/snap.totalBytes)*100; $('#avatarBar').style.width = p+'%';
+        }, (err)=>{
+          console.error(err); setIdentityStatus('Error subiendo avatar');
+        }, async ()=>{
+          state.avatar = await getDownloadURL(task.snapshot.ref);
+          localStorage.setItem('arcadia:avatar', state.avatar);
+          setIdentityStatus('Identidad guardada ✅');
+        });
+      } else {
+        setIdentityStatus('Nombre guardado ✅ (puedes subir avatar cuando quieras)');
+      }
+    });
+
+    // === 6) PUBLICAR EN LA GALERÍA ===
+    $('#publish').addEventListener('click', async ()=>{
+      if(!state.name){ alert('Primero guarda tu identidad (nombre).'); return; }
+      const text = $('#msgText').value.trim();
+      const file = $('#msgImage').files[0];
+      let imageUrl = '';
+      if(!text && !file){ alert('Escribe un mensaje o sube una imagen.'); return; }
+      try{
+        if(file){
+          const r = ref(storage, `wall/${Date.now()}_${file.name}`);
+          const task = uploadBytesResumable(r, file);
+          task.on('state_changed', (snap)=>{
+            const p = (snap.bytesTransferred/snap.totalBytes)*100; $('#msgBar').style.width = p+'%';
+          });
+          await new Promise((res,rej)=> task.on('state_changed', null, rej, res));
+          imageUrl = await getDownloadURL(task.snapshot.ref);
+        }
+        await addDoc(collection(db,'wall'),{
+          name: state.name,
+          avatar: state.avatar,
+          text, image: imageUrl,
+          created: serverTimestamp()
+        });
+        $('#msgText').value=''; $('#msgImage').value=''; $('#msgBar').style.width='0%';
+        $('#wallStatus').textContent = 'Publicado ✅';
+        setTimeout(()=> $('#wallStatus').textContent = 'Tu publicación aparecerá abajo y en todos los navegadores abiertos.', 2000);
+      }catch(e){ console.error(e); alert('Error publicando'); }
+    });
+
+    // === 7) STREAM EN VIVO DE LA GALERÍA ===
+    const wallRef = collection(db,'wall');
+    onSnapshot(query(wallRef, orderBy('created','desc'), limit(60)), (snap)=>{
+      const grid = $('#wallGrid'); grid.innerHTML='';
+      snap.forEach(doc=> grid.appendChild(renderWallItem(doc)) );
+    });
+
+    // === 8) JUKEBOX COMPARTIDA (YouTube) ===
+    $('#addTrack').addEventListener('click', async ()=>{
+      if(!state.name){ alert('Primero guarda tu identidad (nombre).'); return; }
+      const url = $('#ytUrl').value.trim();
+      const id = parseYouTubeId(url);
+      if(!id){ alert('URL de YouTube no válida.'); return; }
+      await addDoc(collection(db,'tracks'),{
+        videoId: id,
+        title: `Pista de ${state.name}`,
+        by: state.name,
+        created: serverTimestamp()
+      });
+      $('#ytUrl').value='';
+    });
+
+    onSnapshot(query(collection(db,'tracks'), orderBy('created','desc'), limit(30)), (snap)=>{
+      const wrap = $('#tracks'); wrap.innerHTML='';
+      snap.forEach(doc=> wrap.appendChild(renderTrackItem(doc)) );
+      if(snap.docs[0]){ const d = snap.docs[0].data(); playTrack(d.videoId, d.title); }
+    });
+
+    function parseYouTubeId(url){
+      try{
+        const u = new URL(url);
+        if(u.hostname.includes('youtu.be')) return u.pathname.slice(1);
+        if(u.searchParams.get('v')) return u.searchParams.get('v');
+        return null;
+      }catch{ return null; }
+    }
+
+    // === 9) PLAYER (YouTube Iframe API) ===
+    let ytReady=false, player=null;
+    function ensureYouTube(){
+      if(ytReady) return Promise.resolve();
+      return new Promise((resolve)=>{
+        const s = document.createElement('script'); s.src='https://www.youtube.com/iframe_api';
+        window.onYouTubeIframeAPIReady = ()=>{ ytReady=true; resolve(); };
+        document.head.appendChild(s);
+      });
+    }
+    async function playTrack(videoId,title){
+      await ensureYouTube();
+      $('#playerCard').style.display='block';
+      $('#nowPlaying').textContent = `Reproduciendo: ${title}`;
+      if(!player){
+        player = new YT.Player('player', { height:'360', width:'640', videoId, playerVars:{autoplay:1,origin:location.origin} });
+      } else {
+        player.loadVideoById(videoId);
+      }
+    }
+
+
+// ===== BADGE MAKER (Canvas) =====
+const canvas = document.getElementById('badgeCanvas');
+const ctx = canvas.getContext('2d');
+let avatarImg = null;
+
+// Cargar avatar del badge
+document.getElementById('badgeAvatar').addEventListener('change', async (e)=>{
+  const f = e.target.files[0];
+  if(!f) return;
+  const url = URL.createObjectURL(f);
+  avatarImg = new Image();
+  avatarImg.src = url;
+  await avatarImg.decode();
+  drawBadge();
+});
+
+// Botones
+document.getElementById('renderBadge').addEventListener('click', drawBadge);
+document.getElementById('downloadBadge').addEventListener('click', ()=>{
+  const a = document.createElement('a');
+  a.href = canvas.toDataURL('image/png');
+  a.download = `arcadia_badge_${Date.now()}.png`;
+  a.click();
+});
+document.getElementById('postBadge').addEventListener('click', async ()=>{
+  if(!state.name){ alert('Primero guarda tu identidad (nombre).'); return; }
+  // sube el PNG a Storage y publica en la colección "wall"
+  const dataUrl = canvas.toDataURL('image/png');
+  const blob = await (await fetch(dataUrl)).blob();
+  const r = ref(storage, `wall/badges/${Date.now()}_${state.name}.png`);
+  const task = uploadBytesResumable(r, blob);
+  await new Promise((res, rej)=> task.on('state_changed', null, rej, res));
+  const imageUrl = await getDownloadURL(task.snapshot.ref);
+  await addDoc(collection(db,'wall'),{
+    name: state.name,
+    avatar: state.avatar,
+    text: document.getElementById('badgeRole').value || 'Miembro Arcadia',
+    image: imageUrl,
+    created: serverTimestamp()
+  });
+  alert('Badge publicado en la Galería ✅');
+  location.hash = '#wall';
+});
+
+// Dibujo del badge
+function drawBadge(){
+  const name = (document.getElementById('badgeName').value || 'Miembro Arcadia').toUpperCase();
+  const role = document.getElementById('badgeRole').value || 'Comunidad';
+  // Fondo
+  const g = ctx.createLinearGradient(0,0,canvas.width,canvas.height);
+  g.addColorStop(0,'#061126'); g.addColorStop(1,'#0f1533');
+  ctx.fillStyle = g; ctx.fillRect(0,0,canvas.width,canvas.height);
+
+  // Nebulosas
+  function blob(cx,cy,r,c){
+    const grd = ctx.createRadialGradient(cx,cy,10,cx,cy,r);
+    grd.addColorStop(0,c); grd.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle = grd; ctx.beginPath(); ctx.arc(cx,cy,r,0,Math.PI*2); ctx.fill();
+  }
+  blob(760,120,240,'rgba(34,211,238,0.25)');  // brand-2
+  blob(220,360,280,'rgba(74,222,128,0.18)');  // brand
+
+  // Marco principal
+  roundRect(ctx,40,40,canvas.width-80,canvas.height-80,28);
+  ctx.strokeStyle = 'rgba(255,255,255,.22)'; ctx.lineWidth = 2; ctx.stroke();
+
+  // Títulos
+  ctx.fillStyle = '#e9eefc';
+  ctx.font = '700 58px Outfit, sans-serif';
+  ctx.fillText('TEAM ARCADIA', 80, 120);
+  ctx.font = '500 24px Outfit, sans-serif';
+  ctx.fillStyle = '#aab3d9';
+  ctx.fillText('Badge oficial de la comunidad', 80, 160);
+
+  // Nombre y rol
+  ctx.fillStyle = '#e9eefc';
+  ctx.font = '800 42px Outfit, sans-serif';
+  ctx.fillText(name, 80, 255);
+  ctx.fillStyle = '#22d3ee';
+  ctx.font = '600 24px Outfit, sans-serif';
+  ctx.fillText(role, 80, 290);
+
+  // Avatar (derecha)
+  const ax = canvas.width - 260, ay = 60, as = 180;
+  roundRect(ctx, ax, ay, as, as, 26); ctx.clip();
+  if(avatarImg) ctx.drawImage(avatarImg, ax, ay, as, as); else {
+    ctx.fillStyle = '#0b1020'; ctx.fillRect(ax, ay, as, as);
+  }
+  ctx.restore();
+
+  // Pie
+  ctx.fillStyle = '#aab3d9'; ctx.font = '500 16px Outfit, sans-serif';
+  const d = new Date();
+  ctx.fillText('Emitido ' + d.toLocaleDateString('es-PE', {year:'numeric',month:'short',day:'2-digit'}), 80, canvas.height-56);
+  // Cinta decorativa
+  ctx.save(); ctx.translate(80, 330); ribbon('#4ade80','#22d3ee'); ctx.restore();
+}
+
+function roundRect(ctx,x,y,w,h,r){
+  ctx.save(); ctx.beginPath(); ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath();
+}
+function ribbon(c1,c2){
+  const grd = ctx.createLinearGradient(0,0,380,0);
+  grd.addColorStop(0,c1); grd.addColorStop(1,c2);
+  ctx.fillStyle = grd; ctx.beginPath();
+  ctx.moveTo(0,0); ctx.lineTo(380,0); ctx.lineTo(340,36); ctx.lineTo(-40,36); ctx.closePath(); ctx.fill();
+}
+
+// Primer render
+drawBadge();
+
+
+
+  </script>
+</body>
+</html>
